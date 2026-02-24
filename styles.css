@@ -1,13 +1,13 @@
 :root {
-  --bg: #0d0f12;
-  --bg-alt: #151a20;
-  --card: #1c232c;
-  --accent: #ff8a00;
-  --accent-2: #5ee4ff;
-  --text: #f6f6f6;
-  --muted: #b7bdc7;
-  --border: rgba(255, 255, 255, 0.08);
-  --shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+  --bg: #f7f2ea;
+  --bg-alt: #fff8f0;
+  --card: #ffffff;
+  --accent: #ff7a45;
+  --accent-2: #2bb4a5;
+  --text: #1b1b1b;
+  --muted: #5d6470;
+  --border: rgba(27, 27, 27, 0.08);
+  --shadow: 0 24px 60px rgba(27, 27, 27, 0.12);
 }
 
 * {
@@ -18,8 +18,9 @@
 
 body {
   font-family: "Space Grotesk", "Noto Sans SC", sans-serif;
-  background: radial-gradient(circle at 20% 20%, rgba(94, 228, 255, 0.15), transparent 40%),
-    radial-gradient(circle at 80% 0%, rgba(255, 138, 0, 0.18), transparent 35%),
+  background: radial-gradient(circle at 15% 10%, rgba(255, 122, 69, 0.18), transparent 40%),
+    radial-gradient(circle at 80% 0%, rgba(43, 180, 165, 0.18), transparent 35%),
+    radial-gradient(circle at 30% 90%, rgba(255, 208, 168, 0.25), transparent 45%),
     var(--bg);
   color: var(--text);
   min-height: 100vh;
@@ -31,8 +32,9 @@ body {
   inset: 0;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='.08'/%3E%3C/svg%3E");
   pointer-events: none;
-  mix-blend-mode: soft-light;
+  mix-blend-mode: multiply;
   z-index: 0;
+  opacity: 0.25;
 }
 
 a {
@@ -49,7 +51,7 @@ a {
   justify-content: space-between;
   padding: 24px 8vw;
   backdrop-filter: blur(16px);
-  background: rgba(13, 15, 18, 0.7);
+  background: rgba(247, 242, 234, 0.82);
   border-bottom: 1px solid var(--border);
 }
 
@@ -66,7 +68,7 @@ a {
   display: grid;
   place-items: center;
   background: linear-gradient(130deg, var(--accent), var(--accent-2));
-  color: #111;
+  color: #fff;
   font-weight: 700;
   letter-spacing: 1px;
 }
@@ -153,7 +155,7 @@ main {
 
 .btn.primary {
   background: linear-gradient(130deg, var(--accent), var(--accent-2));
-  color: #111;
+  color: #fff;
   border: none;
 }
 
@@ -196,7 +198,7 @@ main {
 }
 
 .hero-card.alt {
-  background: linear-gradient(130deg, rgba(255, 138, 0, 0.15), rgba(94, 228, 255, 0.1));
+  background: linear-gradient(130deg, rgba(255, 122, 69, 0.18), rgba(43, 180, 165, 0.12));
 }
 
 .card-title {
@@ -227,10 +229,11 @@ main {
 }
 
 .strip-inner {
-  background: var(--bg-alt);
+  background: rgba(255, 255, 255, 0.8);
   padding: 32px;
   border-radius: 24px;
   border: 1px solid var(--border);
+  box-shadow: var(--shadow);
 }
 
 .strip-title {
@@ -248,8 +251,8 @@ main {
 .strip-item {
   padding: 18px;
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid transparent;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid var(--border);
 }
 
 .strip-item h3 {
@@ -286,7 +289,7 @@ main {
 
 .work-card:hover {
   transform: translateY(-6px);
-  border-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(27, 27, 27, 0.18);
 }
 
 .work-meta {
@@ -311,7 +314,7 @@ main {
 }
 
 .process-step {
-  background: var(--bg-alt);
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 18px;
   padding: 20px;
   border: 1px solid var(--border);
@@ -338,8 +341,8 @@ main {
 }
 
 .price-card.featured {
-  background: linear-gradient(140deg, rgba(255, 138, 0, 0.18), rgba(94, 228, 255, 0.1));
-  border-color: rgba(255, 255, 255, 0.2);
+  background: linear-gradient(140deg, rgba(255, 122, 69, 0.2), rgba(43, 180, 165, 0.12));
+  border-color: rgba(27, 27, 27, 0.12);
   transform: translateY(-6px);
 }
 
@@ -366,7 +369,7 @@ main {
   display: inline-block;
   padding: 4px 10px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(27, 27, 27, 0.08);
   font-size: 11px;
   margin-bottom: 12px;
 }
@@ -376,7 +379,7 @@ main {
 }
 
 .cta-card {
-  background: linear-gradient(120deg, rgba(255, 138, 0, 0.2), rgba(94, 228, 255, 0.12));
+  background: linear-gradient(120deg, rgba(255, 122, 69, 0.22), rgba(43, 180, 165, 0.14));
   border-radius: 26px;
   padding: 32px;
   display: flex;
