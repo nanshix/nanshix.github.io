@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Website builder portfolio and pricing by Nan Shix." />
+  <title>南世希 | 网站打造与展示</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">NS</span>
+      <div>
+        <div class="brand-title" data-i18n="brand_title">南世希 · 网站构建</div>
+        <div class="brand-sub" data-i18n="brand_sub">让你的业务被看见</div>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="#work" data-i18n="nav_work">作品</a>
+      <a href="#services" data-i18n="nav_services">服务</a>
+      <a href="#pricing" data-i18n="nav_pricing">价格</a>
+      <a href="#contact" data-i18n="nav_contact">联系</a>
+    </nav>
+    <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-left">
+        <p class="eyebrow" data-i18n="hero_tag">你在找“能落地”的网站设计师</p>
+        <h1 data-i18n="hero_title">我把你的价值，用网站变成客户的决定。</h1>
+        <p class="hero-lede" data-i18n="hero_lede">
+          专注个人品牌与小团队的高转化官网。快速、清晰、可维护。
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#pricing" data-i18n="hero_cta_primary">查看价格</a>
+          <a class="btn ghost" href="#work" data-i18n="hero_cta_secondary">查看作品</a>
+        </div>
+        <div class="hero-metrics">
+          <div>
+            <div class="metric-value">6+</div>
+            <div class="metric-label" data-i18n="metric_sites">已交付网站</div>
+          </div>
+          <div>
+            <div class="metric-value">7-14</div>
+            <div class="metric-label" data-i18n="metric_days">天交付</div>
+          </div>
+          <div>
+            <div class="metric-value">100%</div>
+            <div class="metric-label" data-i18n="metric_focus">聚焦结果</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-card">
+          <div class="card-title" data-i18n="hero_card_title">项目进行中</div>
+          <div class="card-content">
+            <div class="progress">
+              <span data-i18n="hero_card_item1">品牌梳理</span>
+              <span class="done">100%</span>
+            </div>
+            <div class="progress">
+              <span data-i18n="hero_card_item2">结构与文案</span>
+              <span class="done">85%</span>
+            </div>
+            <div class="progress">
+              <span data-i18n="hero_card_item3">视觉与开发</span>
+              <span class="done">70%</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-card alt">
+          <div class="card-title" data-i18n="hero_card_title2">交付清单</div>
+          <ul>
+            <li data-i18n="hero_card_list1">主页 + 关键落地页</li>
+            <li data-i18n="hero_card_list2">响应式 + SEO 基础</li>
+            <li data-i18n="hero_card_list3">可复制的内容模板</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="strip" id="services">
+      <div class="strip-inner">
+        <div class="strip-title" data-i18n="services_title">为你做的不是“网页”，而是“成交路径”</div>
+        <div class="strip-grid">
+          <div class="strip-item">
+            <h3 data-i18n="service1_title">定位与策略</h3>
+            <p data-i18n="service1_desc">抓住你的差异点，把故事变成首页 5 秒能理解的价值。</p>
+          </div>
+          <div class="strip-item">
+            <h3 data-i18n="service2_title">视觉与体验</h3>
+            <p data-i18n="service2_desc">大胆但克制的视觉系统，确保在手机和电脑上都专业。</p>
+          </div>
+          <div class="strip-item">
+            <h3 data-i18n="service3_title">上线与迭代</h3>
+            <p data-i18n="service3_desc">交付可维护文件，后续扩展有章可循。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work" id="work">
+      <div class="section-head">
+        <h2 data-i18n="work_title">网站样例</h2>
+        <p data-i18n="work_desc">下面是一些已完成的网站，适合品牌、社群、活动或产品展示。</p>
+      </div>
+      <div class="work-grid">
+        <a class="work-card" href="https://nanshix.github.io/roland" target="_blank" rel="noreferrer">
+          <div class="work-meta">
+            <span class="chip">品牌</span>
+            <span class="chip">深色风格</span>
+          </div>
+          <h3>Roland</h3>
+          <p data-i18n="work1_desc">音乐品牌视觉与产品聚焦。</p>
+        </a>
+        <a class="work-card" href="https://nanshix.github.io/terrygames" target="_blank" rel="noreferrer">
+          <div class="work-meta">
+            <span class="chip">游戏</span>
+            <span class="chip">互动</span>
+          </div>
+          <h3>Terry Games</h3>
+          <p data-i18n="work2_desc">游戏集合展示，轻量动效。</p>
+        </a>
+        <a class="work-card" href="https://nanshix.github.io/davyzhang" target="_blank" rel="noreferrer">
+          <div class="work-meta">
+            <span class="chip">个人品牌</span>
+            <span class="chip">极简</span>
+          </div>
+          <h3>Davy Zhang</h3>
+          <p data-i18n="work3_desc">讲清楚个人价值与项目。</p>
+        </a>
+        <a class="work-card" href="https://nanshix.github.io/kanganliangyou" target="_blank" rel="noreferrer">
+          <div class="work-meta">
+            <span class="chip">健康</span>
+            <span class="chip">信任感</span>
+          </div>
+          <h3>康安良友</h3>
+          <p data-i18n="work4_desc">面向用户的健康服务介绍。</p>
+        </a>
+        <a class="work-card" href="https://nanshix.github.io/chunjiangbingxue" target="_blank" rel="noreferrer">
+          <div class="work-meta">
+            <span class="chip">酒类</span>
+            <span class="chip">视觉冲击</span>
+          </div>
+          <h3>春江冰雪</h3>
+          <p data-i18n="work5_desc">以场景塑造产品价值。</p>
+        </a>
+        <a class="work-card" href="https://nanshix.github.io/ziyanshuangpan" target="_blank" rel="noreferrer">
+          <div class="work-meta">
+            <span class="chip">品牌</span>
+            <span class="chip">节奏感</span>
+          </div>
+          <h3>紫烟双攀</h3>
+          <p data-i18n="work6_desc">强调故事感与产品层次。</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="process">
+      <div class="section-head">
+        <h2 data-i18n="process_title">合作流程</h2>
+        <p data-i18n="process_desc">我会快速落地，同时保证每一步都清晰可控。</p>
+      </div>
+      <div class="process-grid">
+        <div class="process-step">
+          <span class="step-num">01</span>
+          <h3 data-i18n="process1_title">梳理目标</h3>
+          <p data-i18n="process1_desc">30-60 分钟访谈，明确你要吸引谁。</p>
+        </div>
+        <div class="process-step">
+          <span class="step-num">02</span>
+          <h3 data-i18n="process2_title">内容与结构</h3>
+          <p data-i18n="process2_desc">给出框架与文案方向，先解决“说清楚”。</p>
+        </div>
+        <div class="process-step">
+          <span class="step-num">03</span>
+          <h3 data-i18n="process3_title">视觉与开发</h3>
+          <p data-i18n="process3_desc">在 7-14 天内完成设计 + 前端交付。</p>
+        </div>
+        <div class="process-step">
+          <span class="step-num">04</span>
+          <h3 data-i18n="process4_title">上线与复盘</h3>
+          <p data-i18n="process4_desc">上线后提供一轮优化建议。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+      <div class="section-head">
+        <h2 data-i18n="pricing_title">价格方案</h2>
+        <p data-i18n="pricing_desc">选择适合你的投入强度，所有方案都可定制。</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <div class="price-head">
+            <h3 data-i18n="price1_title">启动版</h3>
+            <div class="price"><span data-i18n="price1_value">¥4,800</span></div>
+          </div>
+          <ul>
+            <li data-i18n="price1_item1">1-3 页核心内容</li>
+            <li data-i18n="price1_item2">视觉系统 + 响应式</li>
+            <li data-i18n="price1_item3">基础 SEO</li>
+            <li data-i18n="price1_item4">7 天交付</li>
+          </ul>
+          <a class="btn block" href="#contact" data-i18n="price_cta">咨询方案</a>
+        </div>
+        <div class="price-card featured">
+          <div class="badge" data-i18n="price_badge">最受欢迎</div>
+          <div class="price-head">
+            <h3 data-i18n="price2_title">标准版</h3>
+            <div class="price"><span data-i18n="price2_value">¥9,800</span></div>
+          </div>
+          <ul>
+            <li data-i18n="price2_item1">5-8 页 + 1 个落地页</li>
+            <li data-i18n="price2_item2">品牌视觉与故事化文案</li>
+            <li data-i18n="price2_item3">动效与交互细节</li>
+            <li data-i18n="price2_item4">10-14 天交付</li>
+          </ul>
+          <a class="btn primary block" href="#contact" data-i18n="price_cta">咨询方案</a>
+        </div>
+        <div class="price-card">
+          <div class="price-head">
+            <h3 data-i18n="price3_title">旗舰版</h3>
+            <div class="price"><span data-i18n="price3_value">¥19,800</span></div>
+          </div>
+          <ul>
+            <li data-i18n="price3_item1">10+ 页 + 多语言支持</li>
+            <li data-i18n="price3_item2">品牌摄影与插画方向</li>
+            <li data-i18n="price3_item3">定制组件与扩展</li>
+            <li data-i18n="price3_item4">14-21 天交付</li>
+          </ul>
+          <a class="btn block" href="#contact" data-i18n="price_cta">咨询方案</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contact">
+      <div class="cta-card">
+        <div>
+          <h2 data-i18n="cta_title">准备好让你的客户更快理解你了吗？</h2>
+          <p data-i18n="cta_desc">发我一句话，24 小时内给你方案建议。</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn primary" href="mailto:hello@nanshix.com" data-i18n="cta_email">发送邮件</a>
+          <a class="btn ghost" href="https://t.me/" target="_blank" rel="noreferrer" data-i18n="cta_chat">聊聊项目</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <div class="brand-title" data-i18n="footer_title">南世希 · 网站构建</div>
+      <div class="brand-sub" data-i18n="footer_sub">作品集中展示于此页面</div>
+    </div>
+    <div class="footer-links">
+      <span>© 2026</span>
+      <span data-i18n="footer_note">可开票 · 远程合作</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
