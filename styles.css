@@ -1,13 +1,14 @@
 :root {
   --bg: #f7f2ea;
   --bg-alt: #fff8f0;
-  --card: #ffffff;
+  --card: linear-gradient(155deg, rgba(255, 255, 255, 0.96), rgba(255, 244, 233, 0.9));
+  --card-soft: linear-gradient(155deg, rgba(255, 255, 255, 0.9), rgba(240, 252, 249, 0.86));
   --accent: #ff7a45;
   --accent-2: #2bb4a5;
   --text: #1b1b1b;
   --muted: #5d6470;
-  --border: rgba(27, 27, 27, 0.08);
-  --shadow: 0 24px 60px rgba(27, 27, 27, 0.12);
+  --border: rgba(27, 27, 27, 0.12);
+  --shadow: 0 22px 52px rgba(27, 27, 27, 0.1);
 }
 
 * {
@@ -229,7 +230,7 @@ main {
 }
 
 .strip-inner {
-  background: rgba(255, 255, 255, 0.8);
+  background: var(--card-soft);
   padding: 32px;
   border-radius: 24px;
   border: 1px solid var(--border);
@@ -251,7 +252,7 @@ main {
 .strip-item {
   padding: 18px;
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.85);
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.92), rgba(252, 246, 238, 0.84));
   border: 1px solid var(--border);
 }
 
@@ -275,7 +276,7 @@ main {
 .work-grid {
   padding: 0 8vw;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(3, minmax(260px, 1fr));
   gap: 20px;
 }
 
@@ -363,7 +364,7 @@ main {
 }
 
 .process-step {
-  background: rgba(255, 255, 255, 0.9);
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.9), rgba(240, 252, 249, 0.86));
   border-radius: 18px;
   padding: 20px;
   border: 1px solid var(--border);
@@ -383,10 +384,11 @@ main {
 }
 
 .price-card {
-  background: var(--card);
+  background: var(--card-soft);
   border-radius: 20px;
   padding: 24px;
   border: 1px solid var(--border);
+  box-shadow: 0 16px 40px rgba(27, 27, 27, 0.08);
 }
 
 .price-card.featured {
@@ -477,6 +479,10 @@ main {
     grid-template-columns: 1fr;
   }
 
+  .work-grid {
+    grid-template-columns: repeat(2, minmax(240px, 1fr));
+  }
+
   .cta-card {
     flex-direction: column;
     align-items: flex-start;
@@ -511,6 +517,10 @@ main {
   .cta {
     padding-left: 6vw;
     padding-right: 6vw;
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr;
   }
 
   .work-preview {
