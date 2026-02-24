@@ -281,7 +281,7 @@ main {
 
 .work-card {
   padding: 22px;
-  background: var(--card);
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.92), rgba(255, 244, 235, 0.9));
   border-radius: 18px;
   border: 1px solid var(--border);
   transition: transform 0.2s ease, border 0.2s ease;
@@ -304,6 +304,55 @@ main {
   border-radius: 999px;
   border: 1px solid var(--border);
   color: var(--muted);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.work-preview {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: linear-gradient(140deg, rgba(255, 122, 69, 0.12), rgba(43, 180, 165, 0.12));
+  margin-bottom: 16px;
+  height: 180px;
+}
+
+.work-preview iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  transform: scale(0.75);
+  transform-origin: top left;
+  width: 133.333%;
+  height: 133.333%;
+  pointer-events: none;
+  filter: saturate(0.95);
+}
+
+.work-preview::after {
+  content: "Click to interact";
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: rgba(27, 27, 27, 0.7);
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.6);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.work-card:hover .work-preview::after {
+  opacity: 1;
+}
+
+.work-card:hover .work-preview iframe {
+  pointer-events: auto;
 }
 
 .process-grid {
