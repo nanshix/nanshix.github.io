@@ -314,7 +314,7 @@ main {
   border: 1px solid var(--border);
   background: linear-gradient(140deg, rgba(255, 122, 69, 0.12), rgba(43, 180, 165, 0.12));
   margin-bottom: 16px;
-  height: 180px;
+  height: 240px;
 }
 
 .work-preview iframe {
@@ -323,10 +323,10 @@ main {
   width: 100%;
   height: 100%;
   border: 0;
-  transform: scale(0.75);
+  transform: scale(0.8);
   transform-origin: top left;
-  width: 133.333%;
-  height: 133.333%;
+  width: 125%;
+  height: 125%;
   pointer-events: none;
   filter: saturate(0.95);
 }
@@ -511,5 +511,9 @@ main {
   .cta {
     padding-left: 6vw;
     padding-right: 6vw;
+  }
+
+  .work-preview {
+    height: 210px;
   }
 }
